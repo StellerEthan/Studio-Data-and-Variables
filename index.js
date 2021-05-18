@@ -3,9 +3,10 @@
 
 // Declare and initialize the 12 variables here:
 
+const input = require('readline-sync');
 let date = "Monday 2019-03-18";
 let time = "10:05:34 AM";
-let astronautCount = 7;
+let astronautCount = input.question("Number of Astronauts?");
 let astronautStatus = "Ready";
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount*averageAstronautMassKg;
