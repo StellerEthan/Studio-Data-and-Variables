@@ -12,6 +12,7 @@ let crewMassKg = astronautCount*averageAstronautMassKg;
 let fuelMassKg = 760000;
 let shuttleMassKg = 74842.31;
 let totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
+let fuelTemp = -225;
 let fuelLevel = "100%";
 let weatherStatus = "Clear";
 let spacer = "-------------------------------";
@@ -27,7 +28,24 @@ console.log("* count: "+astronautCount);
 console.log("* status: "+astronautStatus);
 console.log("\n" + "\n");
 
-console.log(spacer+"\n"+"> FUEL DATA"+"\n"+spacer);
+console.log(spacer+"\n"+"> FUEL DATA" + "\n"+spacer);
+console.log("* Fuel temp celsius: " + fuelTemp + " C");
+console.log("* Fuel level: " + fuelLevel + "%");
+console.log("\n" + "\n");
+
+console.log(spacer+"\n"+"> MASS DATA" + "\n"+spacer);
+console.log("* Crew mass: " + crewMassKg + "kg");
+console.log("* Fuel mass: " + fuelMassKg + "kg");
+console.log("* Shuttle mass: " + shuttleMassKg + "kg");
+console.log("* Total Mass: " + totalMassKg + "kg");
+console.log("\n" + "\n");
+
+console.log(spacer+"\n"+"> FLIGHT PLAN" + "\n"+spacer);
+console.log("*Weather: " +weatherStatus)
+console.log("\n" + "\n");
+
+console.log(spacer+"\n"+"> FLIGHT PLAN" + "\n"+spacer);
+console.log("* Clear for takeoff: YES")
 
 
 // When done, have your TA check your code.
